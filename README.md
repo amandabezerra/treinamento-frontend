@@ -1,11 +1,22 @@
-**Projeto frontend**
+# Donos&Cachorros Frontend
 
-**Para executar o projeto é necessário o npm instalado**
+Este repositório faz parte do projeto Campos&Linhas, para acessar o repositório de backend clique [aqui](https://github.com/amandabezerra/treinamento-backend). As configurações recomendadas bem como os passos para rodar o projeto encontram-se nas seções abaixo.
 
-npm -i
+## Pré requisitos
 
-**Para executar**
++ [npm](https://www.npmjs.com/get-npm)
++ [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server)
 
-npm start
+## Instalação
 
-**Porta padrão** *9001*
++ Clone este repositório em seu computador utilizando o comando:
+
+  `$ https://github.com/amandabezerra/treinamento-frontend.git`
+
++ Na pasta raiz do projeto rode o comando:
+   
+   `npm start`
+
++ No seu navegador acesse:
+
+    `http://localhost:9001/`
