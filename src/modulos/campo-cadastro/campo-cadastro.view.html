@@ -1,0 +1,18 @@
+<div class="jumbotron">
+  <h1>{{vm.titulo}}</h1>
+
+  <div class="row">
+    <form ng-submit="vm.cadastrar()">
+      <label>
+          Nome:
+          <input type="text" name="nomeCampo" ng-model="vm.campo.nome" required>
+      </label>
+
+      <button type="submit" class="btn btn-primary">Salvar</button>
+      <button type="button" class="btn btn-danger" ng-click="$hide()">Cancelar</button>
+    </div>
+    </form>
+  </div>
+  
+</div>
+  

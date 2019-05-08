@@ -8,7 +8,7 @@ class CampoService {
         this.path =  apiBase + "/campo/listar";
     }
     
-    getCampos() {
+    listarCampos() {
         return this.$http.get(this.path);
     }
 }

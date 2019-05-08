@@ -11,12 +11,14 @@ import routing from './app.config';
 
 import campo from './modulos/campo/campo.js';
 import home from './modulos/home/home.js';
+import campoCadastro from './modulos/campo-cadastro/campo-cadastro.js';
 
 angular
 .module('myApp', [
   uirouter,
   blockUI,
-  campo, 
+  campo,
+  campoCadastro,
   home
 ])
 .config(routing);

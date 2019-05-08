@@ -8,8 +8,8 @@ export default class CampoController {
 
     init();
 
-    function init(){
-      campoService.getCampos().then(function abc(resp) {
+    function init() {
+      campoService.listarCampos().then(function abc(resp) {
         vm.campos = resp.data;
       });
     }
