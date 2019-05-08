@@ -10,7 +10,12 @@ export default class CampoCadastroController {
     vm.cadastrar = function() {
       campoCadastroService.cadastrarCampo(vm.campo).then(function abc(resp) {
         vm.resposta = resp.data;
+        vm.redirecionar();
       });
+    }
+
+    vm.redirecionar = function() {
+      window.location.href = 'http://localhost:9001/#!/campo';
     }
   }
   

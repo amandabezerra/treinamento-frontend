@@ -8,15 +8,17 @@
         <tr>
           <th scope="col">#</th>
           <th scope="col">Campo</th>
-          <th scope="col">Lista</th>
+          <th scope="col">Linhas</th>
         </tr>
       </thead>
       <tbody ng-repeat='campo in vm.campos'>
-        <tr ng-repeat='linha in campo.linhas'>
-            <td><b>{{$index+1}}</b></td>
-            <td>{{campo.nome}}</td>
-            <td>{{linha.nome}}</td>
-        </tr>
+        <td><b>{{$index+1}}</b></td>
+        <td>{{campo.nome}}</td>
+        <td>
+          <li ng-repeat='linha in campo.linhas'>
+            {{linha.nome}}
+          </li>
+        </td>
       </tbody>
     </table>
     
