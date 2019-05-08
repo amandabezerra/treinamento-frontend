@@ -5,11 +5,16 @@ export default class CampoCadastroController {
   constructor(campoCadastroService) {
     var vm = this;
     vm.titulo = 'Cadastrar campo';
-    vm.campo = {nome: ''};
+    vm.listaLinhas = [];
+    vm.campo = '';
+
+    vm.adicionaLinha = function(linha) {
+      vm.listaLinhas.push(linha)
+    }
 
     vm.cadastrar = function() {
-      campoCadastroService.cadastrarCampo(vm.campo).then(function abc(resp) {
-        vm.resposta = resp.data;
+      vm.dado = {nome: vm.campo, linhas: vm.listaLinhas};
+      campoCadastroService.cadastrarCampo(vm.dado).then(function abc(resp) {
         vm.redirecionar();
       });
     }

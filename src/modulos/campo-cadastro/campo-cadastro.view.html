@@ -2,15 +2,32 @@
   <h1>{{vm.titulo}}</h1>
 
   <div class="row">
-    <form ng-submit="vm.cadastrar()">
+    <form>
       <label>
           Nome:
-          <input type="text" name="nomeCampo" ng-model="vm.campo.nome" required>
+          <input type="text" name="nomeCampo" ng-model="vm.campo" required>
       </label>
 
-      <button type="submit" class="btn btn-primary">Salvar</button>
-      <button type="button" class="btn btn-danger" ng-click="vm.redirecionar()">Cancelar</button>
-    </div>
+      <div>
+        <label>Linhas: </label>
+        <br><input type="text" ng-model="linha1.nome">
+        <button ng-click="vm.adicionaLinha(linha1)">Adicionar linha </button>
+        <br><input type="text" ng-model="linha2.nome">
+        <button ng-click="vm.adicionaLinha(linha2)">Adicionar linha </button>
+        <br><input type="text" ng-model="linha3.nome">
+        <button ng-click="vm.adicionaLinha(linha3)">Adicionar linha </button>
+        <br><input type="text" ng-model="linha4.nome">
+        <button ng-click="vm.adicionaLinha(linha4)">Adicionar linha </button>
+        <br><input type="text" ng-model="linha5.nome">
+        <button ng-click="vm.adicionaLinha(linha5)">Adicionar linha </button>
+      </div>
+
+      <!-- <tt>names = {{vm.listaLinhas}}</tt><br/> -->
+
+      <div>
+        <br><button ng-click="vm.cadastrar()" class="btn btn-primary">Salvar</button>
+        <button type="button" class="btn btn-danger" ng-click="vm.redirecionar()">Cancelar</button>
+      </div>
     </form>
   </div>
   
