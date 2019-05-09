@@ -5,11 +5,16 @@ class CampoService {
     constructor($http) {
         this.$http = $http;
         const apiBase = "http://localhost:8080";
-        this.path =  apiBase + "/campo/listar";
+        this.pathListar =  apiBase + "/campo/listar";
+        this.pathPesquisar = apiBase + "/campo/consultarPorNome/";
     }
     
     listarCampos() {
-        return this.$http.get(this.path);
+        return this.$http.get(this.pathListar);
+    }
+
+    pesquisarCampoPorNome(nomeCampo) {
+        return this.$http.get(this.pathPesquisar + nomeCampo);
     }
 }
 

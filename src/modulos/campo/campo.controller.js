@@ -14,6 +14,12 @@ export default class CampoController {
       });
     }
 
+    vm.pesquisar = function(nomeCampo) {
+      campoService.pesquisarCampoPorNome(nomeCampo).then(function abc(resp) {
+        vm.campos = resp.data;
+      });
+    }
+
     vm.redirecionar = function() {
       window.location.href = 'http://localhost:9001/#!/campo/editar';
     }
