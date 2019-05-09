@@ -23,6 +23,12 @@ export default class CampoEdicaoController {
         vm.redirecionar();
       });
     }
+
+    vm.excluir = function() {
+      campoEdicaoService.excluirCampo(vm.campo.id).then(function abc(resp) {
+        vm.redirecionar();
+      });
+    }
   }
   
 }

@@ -7,6 +7,7 @@ class CampoEdicaoService {
         const apiBase = "http://localhost:8080";
         this.pathAlterar =  apiBase + "/campo/alterar/";
         this.pathConsultar = apiBase + "/campo/consultar/";
+        this.pathExcluir = apiBase + "/campo/excluir/";
     }
     
     consultarCampo(idCampo) {
