@@ -1,6 +1,8 @@
 # Donos&Cachorros Frontend
 
-Este repositório faz parte do projeto Campos&Linhas, para acessar o repositório de backend clique [aqui](https://github.com/amandabezerra/treinamento-backend). As configurações recomendadas bem como os passos para rodar o projeto encontram-se nas seções abaixo.
+Este repositório faz parte do projeto Campos&Linhas, para acessar o repositório de backend clique [aqui](https://github.com/amandabezerra/treinamento-backend). 
+
+As configurações recomendadas bem como os passos para rodar o projeto encontram-se nas seções abaixo.
 
 ## Pré requisitos
 
@@ -13,9 +15,13 @@ Este repositório faz parte do projeto Campos&Linhas, para acessar o repositóri
 
   `$ https://github.com/amandabezerra/treinamento-frontend.git`
 
-+ Na pasta raiz do projeto rode o comando:
-   
-   `npm start`
++ Certifique-se de que o projeto [backend](https://github.com/amandabezerra/treinamento-backend) está rodando na porta 8080.
+
++ Na pasta raiz do projeto rode os comandos:
+
+   `$ npm install`
+
+  `$ npm start`
 
 + No seu navegador acesse:
 
