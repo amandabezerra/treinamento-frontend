@@ -27,6 +27,15 @@ export default function routing($stateProvider, $urlRouterProvider) {
       controllerAs: 'vm'
     }
     $stateProvider.state(campoCadastroState);
+
+    let campoEdicaoState = {
+      name: 'campoEdicao',
+      url: '/campo/editar/:idCampo',
+      templateUrl: './modulos/campo-edicao/campo-edicao.view.html',
+      controller: 'CampoEdicaoController',
+      controllerAs: 'vm',
+    }
+    $stateProvider.state(campoEdicaoState);
     
     $urlRouterProvider.otherwise('/home')  
 }

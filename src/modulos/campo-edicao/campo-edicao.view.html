@@ -1,0 +1,24 @@
+<div class="jumbotron">
+  <h1>{{vm.titulo}}</h1>
+
+  <div class="row">
+    <form>
+      <label>
+        Nome:
+        <input type="text" name="nomeCampo" ng-model="vm.campo.nome" required><br>
+      </label>
+
+      <br><label>Linhas: </label>
+      <div ng-repeat='linha in vm.campo.linhas'>
+        <input type="text" ng-model="linha.nome" disabled>
+      </div>
+
+      <div>
+        <br><button ng-click="vm.editar()" class="btn btn-primary">Salvar</button>
+        <button type="button" class="btn btn btn-secondary" ng-click="vm.redirecionar()">Cancelar</button>
+      </div>
+    </form>
+  </div>
+  
+</div>
+  

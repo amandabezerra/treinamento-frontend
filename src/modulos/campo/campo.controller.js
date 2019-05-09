@@ -13,6 +13,10 @@ export default class CampoController {
         vm.campos = resp.data;
       });
     }
+
+    vm.redirecionar = function() {
+      window.location.href = 'http://localhost:9001/#!/campo/editar';
+    }
   }
   
 }

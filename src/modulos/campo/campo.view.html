@@ -1,5 +1,5 @@
 <div class="jumbotron">
-  <h1>Hello, {{vm.name}}</h1>
+  <h1>Lista de Campos&Linhas</h1>
 
   <div class="row">
     
@@ -11,7 +11,7 @@
           <th scope="col">Linhas</th>
         </tr>
       </thead>
-      <tbody ng-repeat='campo in vm.campos'>
+      <tbody ng-repeat='campo in vm.campos' ui-sref="campoEdicao({idCampo: campo.id})">
         <td><b>{{$index+1}}</b></td>
         <td>{{campo.nome}}</td>
         <td>
